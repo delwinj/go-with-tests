@@ -28,7 +28,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Go Test.TestSumAll in github.com/delwinj/learn-go-with-tests/arrays">
+  <component name="RunManager" selected="Go Test.TestSumAllTails in github.com/delwinj/learn-go-with-tests/arrays">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="learn-go-with-tests" />
       <working_directory value="$PROJECT_DIR$" />
@@ -36,17 +36,6 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$" />
       <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSum in github.com/delwinj/learn-go-with-tests/arrays" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="learn-go-with-tests" />
-      <working_directory value="$PROJECT_DIR$/arrays" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/delwinj/learn-go-with-tests/arrays" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestSum\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSumAll in github.com/delwinj/learn-go-with-tests/arrays" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -60,7 +49,7 @@
       <pattern value="^\QTestSumAll\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSum/empty_collection in github.com/delwinj/learn-go-with-tests/arrays" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSumAllTails in github.com/delwinj/learn-go-with-tests/arrays" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learn-go-with-tests" />
       <working_directory value="$PROJECT_DIR$/arrays" />
       <framework value="gotest" />
@@ -68,7 +57,7 @@
       <package value="github.com/delwinj/learn-go-with-tests/arrays" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestSum\E$/^\Qempty_collection\E$" />
+      <pattern value="^\QTestSumAllTails\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -90,6 +79,16 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go test github.com/delwinj/learn-go-with-tests/arrays" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learn-go-with-tests" />
+      <working_directory value="$PROJECT_DIR$/arrays" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/delwinj/learn-go-with-tests/arrays" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go test learn-go-with-tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learn-go-with-tests" />
       <working_directory value="$PROJECT_DIR$" />
@@ -101,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSumAllTails in github.com/delwinj/learn-go-with-tests/arrays" />
+        <item itemvalue="Go Test.go test github.com/delwinj/learn-go-with-tests/arrays" />
         <item itemvalue="Go Test.TestSumAll in github.com/delwinj/learn-go-with-tests/arrays" />
         <item itemvalue="Go Test.go test learn-go-with-tests" />
         <item itemvalue="Go Test.go test arrays" />
-        <item itemvalue="Go Test.TestSum/empty_collection in github.com/delwinj/learn-go-with-tests/arrays" />
-        <item itemvalue="Go Test.TestSum in github.com/delwinj/learn-go-with-tests/arrays" />
       </list>
     </recent_temporary>
   </component>
@@ -118,22 +117,22 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="1241" y="311" width="447" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1603382137295" />
-    <state width="878" height="275" key="GridCell.Tab.0.bottom" timestamp="1603382909598">
+    <state width="878" height="275" key="GridCell.Tab.0.bottom" timestamp="1603401420399">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1603382909598" />
-    <state width="878" height="275" key="GridCell.Tab.0.center" timestamp="1603382909596">
+    <state width="878" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1603401420399" />
+    <state width="878" height="275" key="GridCell.Tab.0.center" timestamp="1603401420397">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1603382909596" />
-    <state width="878" height="275" key="GridCell.Tab.0.left" timestamp="1603382909594">
+    <state width="878" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1603401420397" />
+    <state width="878" height="275" key="GridCell.Tab.0.left" timestamp="1603401420396">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1603382909594" />
-    <state width="878" height="275" key="GridCell.Tab.0.right" timestamp="1603382909597">
+    <state width="878" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1603401420396" />
+    <state width="878" height="275" key="GridCell.Tab.0.right" timestamp="1603401420398">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="878" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603382909597" />
+    <state width="878" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603401420398" />
     <state x="1096" y="127" width="724" height="853" key="git4idea.log.GitShowExternalLogAction" timestamp="1603382137677">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
