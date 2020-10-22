@@ -18,19 +18,19 @@ func TestHello(t *testing.T) {
 
 	})
 
-	t.Run("saying hello to people", func(t *testing.T) {
+	t.Run("empty string arguments", func(t *testing.T) {
 		got := Hello("", "")
 		want := "Hello, World"
 		assertCorrectMessage(t, got, want)
 	})
 
-	t.Run("saying hello to people", func(t *testing.T) {
+	t.Run("saying hello in spanish", func(t *testing.T) {
 		got := Hello("Elodie", "Spanish")
 		want := "Hola, Elodie"
 		assertCorrectMessage(t, got, want)
 	})
 
-	t.Run("saying hello to people", func(t *testing.T) {
+	t.Run("saying hello in french", func(t *testing.T) {
 		got := Hello("Adelie", "French")
 		want := "Bonjour, Adelie"
 		assertCorrectMessage(t, got, want)
