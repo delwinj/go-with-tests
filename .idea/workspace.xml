@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ae8ca71-da33-4dd7-b7be-c25c73dff8a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection/di.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-injection/di_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mocking/countdown_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mocking/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Go Test.go test github.com/delwinj/learn-go-with-tests/dependency-injection">
+  <component name="RunManager" selected="Go Test.go test github.com/delwinj/learn-go-with-tests/mocking">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="learn-go-with-tests" />
       <working_directory value="$PROJECT_DIR$" />
@@ -65,15 +64,13 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSearch in github.com/delwinj/learn-go-with-tests/maps" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/delwinj/learn-go-with-tests/mocking" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learn-go-with-tests" />
-      <working_directory value="$PROJECT_DIR$/maps" />
-      <framework value="gotest" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/delwinj/learn-go-with-tests/maps" />
+      <filePath value="$PROJECT_DIR$/mocking/main.go" />
+      <package value="github.com/delwinj/learn-go-with-tests/mocking" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestSearch\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -106,12 +103,12 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test github.com/delwinj/learn-go-with-tests/pointers" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go test github.com/delwinj/learn-go-with-tests/mocking" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learn-go-with-tests" />
-      <working_directory value="$PROJECT_DIR$/pointers" />
+      <working_directory value="$PROJECT_DIR$/mocking" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/delwinj/learn-go-with-tests/pointers" />
+      <package value="github.com/delwinj/learn-go-with-tests/mocking" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
@@ -127,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test github.com/delwinj/learn-go-with-tests/mocking" />
+        <item itemvalue="Go Build.go build github.com/delwinj/learn-go-with-tests/mocking" />
         <item itemvalue="Go Test.go test github.com/delwinj/learn-go-with-tests/dependency-injection" />
         <item itemvalue="Go Test.go test learn-go-with-tests" />
         <item itemvalue="Go Test.go test github.com/delwinj/learn-go-with-tests/maps" />
-        <item itemvalue="Go Test.TestSearch in github.com/delwinj/learn-go-with-tests/maps" />
-        <item itemvalue="Go Test.go test github.com/delwinj/learn-go-with-tests/pointers" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +152,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="dependency injection" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="836" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603839356661">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="836" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1603839356661" />
     <state x="1164" y="355" width="578" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603402655643">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -164,30 +165,38 @@
     </state>
     <state x="1082" y="259" key="FileChooserDialogImpl/72.27.1596.861@72.27.1596.861" timestamp="1603761372370" />
     <state x="1241" y="311" width="447" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1603382137295" />
-    <state width="878" height="354" key="GridCell.Tab.0.bottom" timestamp="1603836863539">
+    <state width="878" height="354" key="GridCell.Tab.0.bottom" timestamp="1603845767983">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="752" height="275" key="GridCell.Tab.0.bottom/72.27.1596.861@72.27.1596.861" timestamp="1603761372415" />
-    <state width="878" height="354" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1603836863539" />
-    <state width="878" height="354" key="GridCell.Tab.0.center" timestamp="1603836863535">
+    <state width="878" height="354" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1603845767983" />
+    <state width="878" height="354" key="GridCell.Tab.0.center" timestamp="1603845767980">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="752" height="275" key="GridCell.Tab.0.center/72.27.1596.861@72.27.1596.861" timestamp="1603761372404" />
-    <state width="878" height="354" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1603836863535" />
-    <state width="878" height="354" key="GridCell.Tab.0.left" timestamp="1603836863533">
+    <state width="878" height="354" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1603845767980" />
+    <state width="878" height="354" key="GridCell.Tab.0.left" timestamp="1603845767979">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="752" height="275" key="GridCell.Tab.0.left/72.27.1596.861@72.27.1596.861" timestamp="1603761372402" />
-    <state width="878" height="354" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1603836863533" />
-    <state width="878" height="354" key="GridCell.Tab.0.right" timestamp="1603836863537">
+    <state width="878" height="354" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1603845767979" />
+    <state width="878" height="354" key="GridCell.Tab.0.right" timestamp="1603845767981">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="752" height="275" key="GridCell.Tab.0.right/72.27.1596.861@72.27.1596.861" timestamp="1603761372405" />
-    <state width="878" height="354" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603836863537" />
+    <state width="878" height="354" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603845767981" />
+    <state x="1053" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603838633665">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="1053" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603838633665" />
     <state x="1096" y="127" width="724" height="853" key="git4idea.log.GitShowExternalLogAction" timestamp="1603382137677">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="1096" y="127" width="724" height="853" key="git4idea.log.GitShowExternalLogAction/72.27.1848.1053@72.27.1848.1053" timestamp="1603382137677" />
+    <state x="1121" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1603845406264">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="1121" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1603845406264" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learn_go_with_tests$go_test_learn_go_with_tests.out" NAME="go test learn-go-with-tests Coverage Results" MODIFIED="1603761192961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
