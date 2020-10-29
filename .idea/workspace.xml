@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ae8ca71-da33-4dd7-b7be-c25c73dff8a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/concurrency/check_website.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concurrency/check_websites.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concurrency/check_websites_benchmark_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/concurrency/check_websites_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/select/racer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/select/racer_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +54,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Go Test.gobench check_websites_benchmark_test.go">
+  <component name="RunManager" selected="Go Test.go test github.com/delwinj/learn-go-with-tests/select">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="learn-go-with-tests" />
       <working_directory value="$PROJECT_DIR$" />
@@ -94,11 +92,12 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test learn-go-with-tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go test github.com/delwinj/learn-go-with-tests/select" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learn-go-with-tests" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/select" />
       <framework value="gotest" />
-      <kind value="DIRECTORY" />
+      <kind value="PACKAGE" />
+      <package value="github.com/delwinj/learn-go-with-tests/select" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
@@ -123,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test github.com/delwinj/learn-go-with-tests/select" />
         <item itemvalue="Go Test.gobench check_websites_benchmark_test.go" />
         <item itemvalue="Go Test.go test github.com/delwinj/learn-go-with-tests/concurrency" />
         <item itemvalue="Go Build.go build check_websites.go" />
         <item itemvalue="Go Test.gobench learn-go-with-tests" />
-        <item itemvalue="Go Test.go test learn-go-with-tests" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +149,8 @@
     <MESSAGE value="dependency injection" />
     <MESSAGE value="mocking" />
     <MESSAGE value="check status of URLs concurrently" />
-    <option name="LAST_COMMIT_MESSAGE" value="check status of URLs concurrently" />
+    <MESSAGE value="determine faster URL using select and httptest)" />
+    <option name="LAST_COMMIT_MESSAGE" value="determine faster URL using select and httptest)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="836" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603839356661">
@@ -166,33 +166,34 @@
     </state>
     <state x="1082" y="259" key="FileChooserDialogImpl/72.27.1596.861@72.27.1596.861" timestamp="1603761372370" />
     <state x="1241" y="311" width="447" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1603382137295" />
-    <state width="750" height="354" key="GridCell.Tab.0.bottom" timestamp="1603924196062">
-      <screen x="72" y="27" width="1592" height="857" />
-    </state>
-    <state width="750" height="354" key="GridCell.Tab.0.bottom/72.27.1592.857@72.27.1592.857" timestamp="1603924196062" />
-    <state width="752" height="275" key="GridCell.Tab.0.bottom/72.27.1596.861@72.27.1596.861" timestamp="1603761372415" />
-    <state width="878" height="354" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1603846235668" />
-    <state width="750" height="354" key="GridCell.Tab.0.center" timestamp="1603924196060">
-      <screen x="72" y="27" width="1592" height="857" />
-    </state>
-    <state width="750" height="354" key="GridCell.Tab.0.center/72.27.1592.857@72.27.1592.857" timestamp="1603924196060" />
-    <state width="752" height="275" key="GridCell.Tab.0.center/72.27.1596.861@72.27.1596.861" timestamp="1603761372404" />
-    <state width="878" height="354" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1603846235666" />
-    <state width="750" height="354" key="GridCell.Tab.0.left" timestamp="1603924196058">
-      <screen x="72" y="27" width="1592" height="857" />
-    </state>
-    <state width="750" height="354" key="GridCell.Tab.0.left/72.27.1592.857@72.27.1592.857" timestamp="1603924196058" />
-    <state width="752" height="275" key="GridCell.Tab.0.left/72.27.1596.861@72.27.1596.861" timestamp="1603761372402" />
-    <state width="878" height="354" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1603846235664" />
-    <state width="750" height="354" key="GridCell.Tab.0.right" timestamp="1603924196062">
-      <screen x="72" y="27" width="1592" height="857" />
-    </state>
-    <state width="750" height="354" key="GridCell.Tab.0.right/72.27.1592.857@72.27.1592.857" timestamp="1603924196062" />
-    <state width="752" height="275" key="GridCell.Tab.0.right/72.27.1596.861@72.27.1596.861" timestamp="1603761372405" />
-    <state width="878" height="354" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603846235667" />
-    <state x="1053" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603846304571">
+    <state width="878" height="354" key="GridCell.Tab.0.bottom" timestamp="1603933123280">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
+    <state width="750" height="354" key="GridCell.Tab.0.bottom/72.27.1592.857@72.27.1592.857" timestamp="1603927732383" />
+    <state width="752" height="275" key="GridCell.Tab.0.bottom/72.27.1596.861@72.27.1596.861" timestamp="1603761372415" />
+    <state width="878" height="354" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1603933123280" />
+    <state width="878" height="354" key="GridCell.Tab.0.center" timestamp="1603933123278">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="750" height="354" key="GridCell.Tab.0.center/72.27.1592.857@72.27.1592.857" timestamp="1603927732382" />
+    <state width="752" height="275" key="GridCell.Tab.0.center/72.27.1596.861@72.27.1596.861" timestamp="1603761372404" />
+    <state width="878" height="354" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1603933123278" />
+    <state width="878" height="354" key="GridCell.Tab.0.left" timestamp="1603933123277">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="750" height="354" key="GridCell.Tab.0.left/72.27.1592.857@72.27.1592.857" timestamp="1603927732382" />
+    <state width="752" height="275" key="GridCell.Tab.0.left/72.27.1596.861@72.27.1596.861" timestamp="1603761372402" />
+    <state width="878" height="354" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1603933123277" />
+    <state width="878" height="354" key="GridCell.Tab.0.right" timestamp="1603933123279">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="750" height="354" key="GridCell.Tab.0.right/72.27.1592.857@72.27.1592.857" timestamp="1603927732383" />
+    <state width="752" height="275" key="GridCell.Tab.0.right/72.27.1596.861@72.27.1596.861" timestamp="1603761372405" />
+    <state width="878" height="354" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603933123279" />
+    <state x="917" y="240" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603924248140">
+      <screen x="72" y="27" width="1592" height="857" />
+    </state>
+    <state x="917" y="240" key="Vcs.Push.Dialog.v2/72.27.1592.857@72.27.1592.857" timestamp="1603924248140" />
     <state x="1053" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603846304571" />
     <state x="1096" y="127" width="724" height="853" key="git4idea.log.GitShowExternalLogAction" timestamp="1603382137677">
       <screen x="72" y="27" width="1848" height="1053" />
