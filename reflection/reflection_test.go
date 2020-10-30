@@ -105,12 +105,30 @@ func TestWalk(t *testing.T) {
 		go func() {
 			aChannel <- Profile{33, "Berlin"}
 			aChannel <- Profile{34, "Paris"}
+			close(aChannel)
 		}()
 
 		var got []string
 		want := []string{"Berlin", "Paris"}
 
 		walk(aChannel, func(input string) {
+			got = append(got, input)
+		})
+
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got %v, want %v", got, want)
+		}
+	})
+
+	t.Run("function", func(t *testing.T) {
+		aFunction := func() (Profile, Profile) {
+			return Profile{33, "Berlin"}, Profile{34, "Paris"}
+		}
+
+		var got []string
+		want := []string{"Berlin", "Paris"}
+
+		walk(aFunction, func(input string) {
 			got = append(got, input)
 		})
 
