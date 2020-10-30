@@ -150,7 +150,8 @@
     <MESSAGE value="determine faster URL using select and httptest)" />
     <MESSAGE value="refactored tests to table based tests" />
     <MESSAGE value="walk struct with two string fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="walk struct with two string fields" />
+    <MESSAGE value="walk struct with non string fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="walk struct with non string fields" />
   </component>
   <component name="WindowStateProjectService">
     <state x="836" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603839356661">
@@ -166,30 +167,30 @@
     </state>
     <state x="1082" y="259" key="FileChooserDialogImpl/72.27.1596.861@72.27.1596.861" timestamp="1603761372370" />
     <state x="1241" y="311" width="447" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1603382137295" />
-    <state width="878" height="354" key="GridCell.Tab.0.bottom" timestamp="1604022720606">
+    <state width="878" height="354" key="GridCell.Tab.0.bottom" timestamp="1604023258167">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="750" height="354" key="GridCell.Tab.0.bottom/72.27.1592.857@72.27.1592.857" timestamp="1603927732383" />
     <state width="752" height="275" key="GridCell.Tab.0.bottom/72.27.1596.861@72.27.1596.861" timestamp="1603761372415" />
-    <state width="878" height="354" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1604022720606" />
-    <state width="878" height="354" key="GridCell.Tab.0.center" timestamp="1604022720604">
+    <state width="878" height="354" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1604023258167" />
+    <state width="878" height="354" key="GridCell.Tab.0.center" timestamp="1604023258165">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="750" height="354" key="GridCell.Tab.0.center/72.27.1592.857@72.27.1592.857" timestamp="1603927732382" />
     <state width="752" height="275" key="GridCell.Tab.0.center/72.27.1596.861@72.27.1596.861" timestamp="1603761372404" />
-    <state width="878" height="354" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1604022720604" />
-    <state width="878" height="354" key="GridCell.Tab.0.left" timestamp="1604022720603">
+    <state width="878" height="354" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1604023258165" />
+    <state width="878" height="354" key="GridCell.Tab.0.left" timestamp="1604023258165">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="750" height="354" key="GridCell.Tab.0.left/72.27.1592.857@72.27.1592.857" timestamp="1603927732382" />
     <state width="752" height="275" key="GridCell.Tab.0.left/72.27.1596.861@72.27.1596.861" timestamp="1603761372402" />
-    <state width="878" height="354" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1604022720603" />
-    <state width="878" height="354" key="GridCell.Tab.0.right" timestamp="1604022720605">
+    <state width="878" height="354" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1604023258165" />
+    <state width="878" height="354" key="GridCell.Tab.0.right" timestamp="1604023258166">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="750" height="354" key="GridCell.Tab.0.right/72.27.1592.857@72.27.1592.857" timestamp="1603927732383" />
     <state width="752" height="275" key="GridCell.Tab.0.right/72.27.1596.861@72.27.1596.861" timestamp="1603761372405" />
-    <state width="878" height="354" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1604022720605" />
+    <state width="878" height="354" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1604023258166" />
     <state x="917" y="240" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603924248140">
       <screen x="72" y="27" width="1592" height="857" />
     </state>
